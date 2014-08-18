@@ -12,6 +12,7 @@ public class LargePrimeFinder
 		int k;
 		boolean isPrime = true;
 		
+		//Only the numbers between 2 and number/2 are necessary to test for primes
 		for( k = 2; k < numToAnalyze/2; k++)
 		{
 			if(numToAnalyze%k == 0)
@@ -32,6 +33,7 @@ public class LargePrimeFinder
 			{
 				primes.add(k);
 			}
+			//Needed to stop the program from hitting an exception and crashing
 			if(k < 0)
 			{
 				break;

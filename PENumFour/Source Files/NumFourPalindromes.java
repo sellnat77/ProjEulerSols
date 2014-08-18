@@ -1,12 +1,15 @@
-
+/**
+ * Solution to PrujectEuler.net number four to find the largest prime number 
+ * created using two 3 digit numbers multiplied together
+ *
+ */
 public class NumFourPalindromes 
 {
 	public static void main(String Args[])
 	{
 		PalindromeChecker test = new PalindromeChecker();
 		
-		test.showThreesProducts();
-		//System.out.println(test.checkPal(Integer.toString(100*100)));
+		test.performThreesProducts();
 		test.printLargest();
 	}
 

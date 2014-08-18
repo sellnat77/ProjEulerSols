@@ -5,7 +5,9 @@ public class PalindromeChecker
 {
 	ArrayList<Integer> palNumbers = new ArrayList<Integer>();
 	String numToCheck;
-	void showThreesProducts()
+	
+	//Multiplies all numbers between 100-999
+	void performThreesProducts()
 	{
 		int numOne,numTwo,product;
 		
@@ -20,12 +22,14 @@ public class PalindromeChecker
 		}
 	}
 
-	
+	//Checks if numbers are palindromes
 	void checkPal(int numberToCheck)
 	{
 		int buffer = numberToCheck;
 		int reverse = 0;
 		
+		//repeatedly divides the input by 10 and uses the remainder to assign to
+		//the reverse of the input
 		while(buffer != 0)
 		{
 			reverse = reverse * 10; 
@@ -36,13 +40,12 @@ public class PalindromeChecker
 		if(numberToCheck == reverse)
 		{
 			palNumbers.add(reverse);
-			System.out.println(reverse + " Congratulations!");
 		}
 	}
 	
 	void printLargest()
 	{
 		Collections.sort(palNumbers);
-		System.out.println("largest is" + palNumbers.get(palNumbers.size()-1));
+		System.out.println("largest is " + palNumbers.get(palNumbers.size()-1));
 	}
 }

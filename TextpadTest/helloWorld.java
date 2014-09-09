@@ -4,9 +4,4 @@ public class helloWorld
 	{
 		printer myPrinter = new printer();
 	}
-
-	public void printName()
-	{
-		System.out.println("Russell Tan");
-	}
 }
